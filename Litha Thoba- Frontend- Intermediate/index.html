@@ -1,0 +1,79 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quicknotes</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/e11feea8db.js" crossorigin="anonymous"></script>
+    </head>
+<body class="body">
+    <nav class="navbar">
+      <a href="#" class="navbar-brand"> Quicknotes</a>
+      <button class="switch icon" id="switch">
+        <i style="visibility: hidden;" class="fa-regular fa-sun switch-light"></i>
+        <i class="fa-regular fa-moon switch-dark"></i>
+      </button>
+      <button id="settings" class="setup"><i class="fa-solid fa-gear icon"></i></button>
+      <button id="user" class="setup" data-bs-toggle="modal" data-bs-target="#myModal"><i class="icon fa-solid fa-user"></i></button>
+    </nav>
+    <header>
+      <div class="greeting">
+      <h1 id="myName" contenteditable="true">Hello, User
+      </h1>
+      <input class="search-input" placeholder="Search Quicknotes..." required="" type="text">
+    </header>
+  
+    <!--sub-navigation-->
+    <div class="nav-header">
+      <h3 class="item-0">Notebooks</h3>
+      <h3 class="item-1">Tags </h3>
+    </div>
+    <div class="container">
+      <div class="item-0" id="notebooks-section">
+        <button id="all-notebooks" class="btn active" onclick="filterSelection('all notebooks')">Show All</button>
+        <button id="work" class="notebook" onclick="filterSelection('work')">Work</button>
+        <button id="personal" class="notebook" onclick="filterSelection('personal')">Personal</button>
+        <button class="add-notebook notebook">
+          <i class="icon fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <div class="item-0" id="tags-section">
+  
+        <button id="all-tags" class="tags" onclick="filterSelection('All Tags')">Show All</button>
+        <button id="to-do" class="tags" onclick="filterSelection('to-do')">To-do</button>
+        <button id="reminders" class="tags" onclick="filterSelection('reminders')">Reminders</button>
+        <button class="tags add-tag">
+          <i id="add-tag" class="icon fa-solid fa-plus"></i></button>
+      </div>
+  
+    </div>
+    <!--list of notes-->
+    <section class="notes">
+      <h2> Notes </h2>
+      <button id="add-btn" class="btn">+</button>
+      <!---
+      <div class="card note">
+      <button id="edit-note" class="btn-card">
+          <i class="fa-solid fa-pen"></i></button> 
+     <button id="delete-note" class="btn-card">
+          <i class="fa-solid fa-trash"></i></button>
+        <input id="note-title" class="card-title" placeholder="Your note title...">
+        <textarea class="card-body" id="note-content" placeholder="Your note here...."></textarea>
+      <button id="save-note" class="btn-card">
+          Save
+     </button>
+      </div>  
+      </div>  --->
+    </section>
+    <div class="note-grid">
+  
+    </div>
+  
+    <footer>
+      <p> (C) Copyright Litha Thoba 2025</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="dark-mode.js"></script>
+</body>
+    </html>

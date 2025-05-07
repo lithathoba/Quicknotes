@@ -1,0 +1,514 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+/**/
+:root {
+ --brand:#9FA8DA;
+  --text-color:#546E7A;
+  --background-color: #e0e5eb;
+  --all-notebooks:#66BB6A; 
+  --icon-color: #dadada;
+  --box-shadow:2px 2px 5px rgba(0, 0, 0, 0.5);
+  --button-shadow:2px 2px 5px rgba(0,0,0,0.5);
+  --h1-shadow:-3px -2px 3px rgba(0, 0, 0, 0.4), 3px 1px 3px rgba(255, 255, 255, 1);
+  --text-shadow: 1px 2px 3px rgba(255, 255, 255, 1), -1px -1px 3px rgba(0, 0, 0, 0.4);
+  --icon-shadow:  1px 2px 3px rgba(255, 255, 255, 1), -1px -1px 3px rgba(0, 0, 0, 0.4);
+  --i-hover: 1px 2px 3px rgba(255, 255, 255, 1), -1px -1px 3px rgba(0, 0, 0, 0.4);
+  --tag-shadow:3px 3px 5px white,-3px -3px 5px black;
+  --work-button: #0D47A1;
+  --on-switch:1.45rem;
+  --switch-size: 0rem;
+--background-color:#e0e5eb;
+ --switch-bg:#FFF59D;
+ --on-off:hidden;
+}
+
+.darkmode{
+  --brand: white;
+  --text-color:white;
+  --heading-color: white;
+  --icon-color: grey;
+  --box-shadow:2px 2px 5px rgba(0,0,0,0.5);
+  --button-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  --h1-shadow:3px 2px 3px rgba(26, 27, 29, 1), -1px -2px 3px rgba(184, 184, 200, 0.29);;
+  --text-shadow: 3px 3px 5px  #18181a ,-3px -3px 5px #5e6270;
+  --icon-shadow: 3px 3px 5px #878a96, -3px -3px 5px #18181a;
+  --i-hover: 3px 3px 5px #18181a,-3px -3px 5px #5e6270;
+  --tag-shadow:3px 3px 5px white,-3px -3px 5px black;
+  --work-button: #00B8D4;
+  --on-switch:1.45rem;
+  --switch-size: 0rem;
+ --background-color: #393A3E ;
+ --text-color:white;
+  --all-notebooks:white;
+  --heading-color: white;
+  --icon-color: grey;
+  --box-shadow:2px 2px 5px rgba(0,0,0,0.5);
+  --button-shadow:white;
+  --h1-shadow:3px 2px 3px rgba(26, 27, 29, 1), -1px -2px 3px rgba(184, 184, 200, 0.29);;
+  --text-shadow: 3px 3px 5px  #18181a ,-3px -3px 5px #5e6270;
+  --icon-shadow: 3px 3px 5px #878a96, -3px -3px 5px #18181a;
+ --border-top: 1px solid rgba(255,255,255,0.5);
+  --border-left:1px solid rgba(255,255,255,0.5);
+  --i-hover: 3px 3px 5px #18181a,-3px -3px 5px #5e6270;
+  --tag-shadow:3px 3px 5px white,-3px -3px 5px black;
+  --work-button: #00B8D4;
+  --on-switch:1.45rem;
+  --switch-size: 0rem;
+}
+
+
+/* body*/
+* {
+ background-color:var(--background-color);
+ font-family: Poppins, sans-serif;
+  
+{
+ margin: 0;
+ padding: 0;
+};
+ border: none;
+ margin: inherit;
+ /* border-image-source: none; */
+}
+
+html {
+    background: var(--background-color);
+    background-color: var(--background-color);
+}
+
+/*header*/
+
+.navbar-brand{
+   font-size: 1.6rem;
+   line-height: 1.25;
+   margin-right: auto;
+   letter-spacing: -1px;
+   text-transform: uppercase;
+   color: var(--brand);
+   font-family: Montserrat, sans-serif;
+   size: 40px;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  color:var(--background-color);
+  text-shadow: var(--h1-shadow);
+  
+}
+
+nav {
+  font-family: Poppins, sans-serif;
+}
+
+.navbar {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-content: center;
+   justify-content: space-between;
+   width: 100%;
+   height: 4rem;
+   /* margin: 0 auto; */
+}
+
+.setup {
+ border: none;
+  
+}
+
+.switch {
+   position: relative;
+   display: block;
+   cursor: pointer;
+   user-select: none;
+   z-index: 9;
+   margin-left: 5rem;
+   margin-right: 0.5rem;
+}
+
+i .switch-light, .switch-dark {
+      top: 50%;
+      left: 50%;
+   }
+
+.switch-light{
+  display: none;
+  
+}
+
+ h3{
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.icon {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: transparent;
+  text-shadow: var(--i-hover);
+  border-radius: 15px;
+  font-size: 25px;
+  color: var(--icon-color);
+}
+
+i:hover { 
+  color:#dadada;
+  text-shadow: var(--icon-shadow);
+}
+
+.search-input {
+  border: 2px solid transparent;
+  outline: none;
+  background-color: transparent;
+  margin: auto;
+  display: block;
+  padding: 7px 20px;
+  font-size: 18px;
+  line-height: 1;
+  outline: none;
+  border-radius: 17px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+header {
+  margin: 5px 10px 20px 5px;
+}
+
+
+/*tags*/
+ 
+#work, #personal, #custom, #to-do, #reminders, #all-tags, #all-notebooks {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  background-color:var(--background-color);
+  border-radius: 15px;
+  font-size: 15px;
+  color: var(--text-color);
+    
+}
+
+
+#all-tags{
+  background: radial-gradient(transparent 13%, #9fbbd1 100%);
+  border: 2px solid #9fbbd1;
+}
+
+#all-tags:hover {
+ box-shadow: 3px 4px 5px 0px #9fbbd1;
+}
+
+#reminders{
+  background: radial-gradient(transparent 13%, #d19fcf 100%);
+  border: 2px solid #d19fcf;
+}
+
+#reminders:hover {
+ box-shadow: 3px 4px 5px 0px #d19fcf;
+ background: radial-gradient(transparent 100%, #9fbbd1 13%);
+ color: #D19FCF;
+}
+
+#to-do{
+  background: radial-gradient(transparent 13%, #ff85b6 100%);
+  border: 2px solid #ff85b6;
+ 
+}
+
+#to-do:hover {
+ box-shadow: 3px 4px 5px 0px #ff85b6;
+  background: radial-gradient(transparent 100%, #9fbbd1 13%); 
+  color: #ff85b6;  
+}
+
+
+#personal:hover {
+  color:#FFC400 ; 
+  box-shadow: 3px 4px 5px 0px #ffc400;
+   text-shadow: 2px 2px 5px #ffc400;
+}
+
+#personal {
+  border: 2px solid #FFC400;
+  color: #ffc400;
+  background-color: transparent;
+}
+
+#work:hover {
+  color:var(--work-button);
+  box-shadow: 6px 6px 7px -3px var(--work-button);
+   text-shadow: 5px 2px 5px var(--work-button);
+
+
+}
+
+#work {
+ border: 2px solid var(--work-button); 
+  color: var(--work-button);
+ background-color: transparent;
+
+}
+
+#all-notebooks:hover{
+  color:var(--all-notebooks);
+  text-shadow: 2px 2px 5px rgba(255,255,255,1);
+  box-shadow: 3px 4px 5px 0px var(--all-notebooks);
+}
+
+#all-notebooks {
+  border: 2px solid var(--all-notebooks); 
+  color: var(--all-notebooks);
+  background-color: transparent;
+}
+
+#custom-notebook {
+    border: 2px solid #fafafa; 
+  color: #fafafa;
+  background-color: transparent;
+  
+}
+
+#custom-notebook:hover {
+color:#B2FF59;
+  box-shadow: 6px 6px 7px -3px #B2FF59;
+   text-shadow: 2px 2px 5px #b2ff59;
+  
+}
+
+.container {
+    gap: 9px;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    overflow: auto;
+    flex-direction: row;
+    background-color: transparent;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#notebooks-section, #tags-section {  
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 5px 15px 5px;
+    padding: 0px 5px 12px 8px;
+    overflow: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.nav-header {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+	justify-content: space-around;
+  gap: inherit;
+  flex-direction: row;
+  color: var(--text-color);
+}
+
+h2 {
+font-weight: bold;
+  color: var(--text-color);
+}
+
+/*add note button*/
+#add-btn { 
+  border: none; 
+  outline: none; 
+   background-color: var(--background-color);
+  border-radius: 10px; 
+  font-size: 50px; 
+  color:#dadada;
+   border-top:1px solid rgba(255,255,255,0.5);
+   border-left:1px solid rgba(255,255,255,0.5);
+   box-shadow: var(--box-shadow);
+  cursor: pointer; 
+  transition: background 0.2s; 
+  padding: 10px 30px 10px 30px;
+  margin: 10px 20px 20px 70px;
+}
+
+#add-btn:hover{
+  border: 2px solid #dadada;
+  color:#FAFAFA;
+  text-shadow: 2px 2px 15px rgba(255,255,255,1);
+  box-shadow: 3px 4px 5px 0px #fafafa;
+}
+
+
+/*card for notes, once published*/
+.notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: transparent;
+  width: 500px;
+  padding: 1rem 1rem 1rem 1rem;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: right;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  border-top:1px solid rgba(255,255,255,0.5);
+  border-left:1px solid rgba(255,255,255,0.5);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  width: 300px;
+  height:  300px;
+  border-radius: 25px;
+}
+
+
+.button-container {
+    background-color: transparent;
+    display: flex;
+}
+
+#note-title,
+#note-content,
+#note-tags,
+#note-notebook {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  
+}
+
+#note-title {
+ border: 2px solid transparent;
+ position: absolute;
+ height: 40px;
+ width: fit-content;
+ font-weight: 700;
+ line-height: 2rem;
+ border: 1px solid transparent;
+ outline: none;
+ on: .3s ease;
+ margin: 1rem 0rem 1rem 0rem;
+ padding: 1em 1em 1em 1em;
+ resize: auto;
+  color:var(--text-color);
+}
+
+
+.card-body {
+  min-height: 120px;
+  resize: auto;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 1em 1em 1em 1em;
+  min-inline-size: 230px;
+  background-color: transparent;
+  position: fixed;
+  top: 3.2rem;
+  color: var(--text-color);
+}
+
+textarea, input {
+   background-color: transparent;
+   border-radius: 16px;
+}
+
+p.note-date {
+    font-size: small;
+    color: var(--text-color);
+    position: relative;
+    top: 215px;
+}
+
+#delete-note {
+  background-color: #ff1a1a;
+  color: white;
+  left: 12.5rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 3rem;
+  position: absolute;
+  top: 1rem;
+}
+
+#edit-note {
+  background-color: #0d47a1;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 3rem;
+  position: absolute;
+  left: 15rem;
+  top: 1rem;
+}
+
+
+#edit-note:hover {
+  background-color:#7986CB;
+}
+
+#delete-note:hover {
+  background-color: #ff4d4d;
+}
+
+#save-note {
+ position: relative;
+ border-radius: 15px;
+ background-color: transparent;
+ border: none;
+ border: 2px solid #00C853;
+ color:#00C853;
+ width: 4rem;
+ top: 220px;
+}
+
+#save-note:hover{
+  box-shadow: 3px 4px 5px 0px #00c853;
+}
+
+/*the flexbox grid*/
+.note-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    width: -webkit-fill-available;
+    height: 80vh;
+    flex-direction: row;
+}
+
+/*footer*/
+
+footer {
+  text-align: center;
+  padding: 3px;
+  color:var(--text-color);
+}

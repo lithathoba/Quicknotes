@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicknotes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e11feea8db.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!--header and navigation-->
+    <nav class="navbar-brand">
+        Quicknotes
+        <div id="header-icons">
+            <button id="setup" class="settings"><i class="fa-solid fa-gear"></i></button>
+            <button id="setup" class="user"><i class="fa-solid fa-user"></i></button>
+        </div>
+    </nav>
+    <header>
+        <h1>Hello, User</h1>
+
+    </header>
+    <!--sub-navigation-->
+    <div id="sidebar-container">
+        <div id="notebooks-section">
+            <ul>
+                <li class="nav-header">
+                    Notebooks
+                    <ul>
+                        <li><button id="work" class="notebook">Work</button></li>
+                        <li><button id="personal" class="notebook">Personal</button></li>
+                        <li>
+                            <button class="add-notebook notebook">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="tags-section">
+            <ul>
+                <li class="nav-header">
+                    Tags
+                    <ul>
+                        <li><button class="tags">To-do</button></li>
+                        <li><button class="tags">Reminders</button></li>
+                        <li>
+                            <button class="tags add-tag">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--login and signup-->
+    <div class="modal" id="login">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"> Your Username</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--list of notes-->
+    <section class="notes">
+        <h2> Notes </h2>
+        <div class="card note">
+            <input id="note-title" class="card-title" placeholder="Enter note title">
+            <textarea class="card-body" id="note-content" placeholder="Enter note content"></textarea>
+        </div>
+        <div class="card-footer">
+            <button id="add-btn" class="btn-card">
+                <i class="fa-solid fa-plus">
+                </i>
+            </button>
+            <button id="edit-note" class="btn-card">
+                <i class="fa-solid fa-pen"></i>
+            </button>
+            <button id="delete-note" class="btn-card">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+            <button id="save-note" class="btn-card">
+                Save
+            </button>
+        </div>
+    </section>
+    <!--modal passwords for security-->
+    <div class="modal">
+        <h2>Enter Password</h2>
+        <input type="password">
+        <button>OK</button>
+    </div>
+</body>
+</html>
